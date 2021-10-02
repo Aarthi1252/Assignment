@@ -1,4 +1,4 @@
-package com.Assessment1.com;
+package com.Assessment;
 
 public class ConstructorEx1 {
     static int c = 300;

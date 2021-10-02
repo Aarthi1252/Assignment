@@ -1,4 +1,4 @@
-package com.Assessment1.com.com;
+package com.Assessment.com;
 
 public class ConstructorEx2 {
 
