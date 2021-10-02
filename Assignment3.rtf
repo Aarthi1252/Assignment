@@ -1,0 +1,91 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern JetBrains Mono;}}
+{\colortbl ;\red204\green120\blue50;\red169\green183\blue198;\red152\green118\blue170;\red104\green151\blue187;\red255\green198\blue109;\red106\green135\blue89;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f0\fs20 Question 1\f1\lang9\par
+\par
+package \cf2 com\cf1 ;\line\line\line\line class \cf2 parentclass\{\line     \cf1 int \cf3 a\cf2 =\cf4 10\cf1 ;\line     static int \cf3\i b\cf2\i0 =\cf4 20\cf1 ;\line     void \cf5 add\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "addition:" \cf2 +c)\cf1 ;\line\line     \cf2\}\line     \cf1 static void \cf5 sub\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent static method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 parentclass pcex1= \cf1 new \cf2 parentclass()\cf1 ;\line         \cf2 c= pcex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction: "\cf2 +c)\cf1 ;\line\line     \cf2\}\line     \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 parentclass\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent class constructor1"\cf2 )\cf1 ;\line     \cf2\}\line\line\line\}\line\cf1 class \cf2 Childclass \cf1 extends \cf2 parentclass\{\line     \cf1 int \cf3 a\cf2 =\cf4 100\cf1 ;\line     static int \cf3\i b\cf2\i0 =\cf4 200\cf1 ;\line     void \cf5 add2\cf2 ()\{\line         \cf1 super\cf2 .add()\cf1 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Child instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Addition:" \cf2 +c)\cf1 ;\line     \cf2\}\line     \cf1 static void \cf5 sub\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child static method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 Childclass ccex1= \cf1 new \cf2 Childclass()\cf1 ;\line         \cf2 c=ccex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction:" \cf2 +c)\cf1 ;\line     \cf2\}\line     \{\line\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 Childclass\cf2 () \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child class constructor1"\cf2 )\cf1 ;\line     \cf2\}\line\line\}\line\line     \cf1 public class \cf2 SingleInheritanceEx1 \{\line     \cf1 public static void \cf5 main\cf2 (String[] args)\{\line\line         Childclass ccex1= \cf1 new \cf2 Childclass()\cf1 ;\line         \cf2 ccex1.add()\cf1 ;\line         \cf2 Childclass.\i sub\i0 ()\cf1 ;\line     \cf2\}\line\}\line\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 Parent static block\par
+Child static block\par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+Parent instance method\par
+addition:30\par
+Child static method\par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+Subtraction:-100\par
+\par
+Question 2\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20 package \cf2 com\cf1 ;\line class \cf2 parentcls\{\line     \cf1 int \cf3 a\cf2 =\cf4 11\cf1 ;\line     static int \cf3\i b\cf2\i0 =\cf4 12\cf1 ;\line     void \cf5 add\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "parent instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 " Addiction:" \cf2 +c)\cf1 ;\line     \cf2\}\line     \cf1 static  void \cf5 sub\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent static method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 parentcls pcex1= \cf1 new \cf2 parentcls()\cf1 ;\line         \cf2 c= pcex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction:" \cf2 +c)\cf1 ;\line     \cf2\}\line     \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 parentcls\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent class constructor1"\cf2 )\cf1 ;\line\line     \cf2\}\line\}\line\cf1 class \cf2 Childcls \cf1 extends  \cf2 parentcls\{\line     \cf1 int \cf3 a\cf2 =\cf4 21\cf1 ;\line     static int \cf3\i b\cf2\i0 =\cf4 22\cf1 ;\line     void \cf5 add1\cf2 ()\{\line         \cf1 super\cf2 .add()\cf1 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Child instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Addition:" \cf2 +c)\cf1 ;\line     \cf2\}\line     \cf1 static void \cf5 sub1\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child static method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 Childcls ccex1= \cf1 new \cf2 Childcls()\cf1 ;\line         \cf2 c= ccex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction:" \cf2 +c)\cf1 ;\line\line     \cf2\}\line     \{\line\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 Childcls\cf2 () \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child class constructor1"\cf2 )\cf1 ;\line     \cf2\}\line\}\line\cf1 class \cf2 Grandparentcls \cf1 extends \cf2 Childcls\{\line     \cf1 int \cf3 a\cf2 =\cf4 31\cf1 ;\line     static  int \cf3\i b\cf2\i0 =\cf4 32\cf1 ;\line     void \cf5 add2\cf2 ()\{\line         \cf1 this\cf2 .add()\cf1 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Grandparent instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Addiction:" \cf2 +c)\cf1 ;\line\line     \cf2\}\line     \cf1 static void \cf5 sub2\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Grandparent static method  "\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 Grandparentcls gpcex1= \cf1 new \cf2 Grandparentcls()\cf1 ;\line         \cf2 c= gpcex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction:" \cf2 +c)\cf1 ;\line     \cf2\}\line     \{\line\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Grandparent instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Grandparent static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 Grandparentcls\cf2 () \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Grandparent class constructor1"\cf2 )\cf1 ;\line     \cf2\}\line\line\}\line\line\cf1 public class \cf2 MultilevelInheritanceEx1 \{\line     \cf1 public static void \cf5 main\cf2 (String[] args) \{\line\line         Grandparentcls gpcex1= \cf1 new \cf2 Grandparentcls()\cf1 ;\line         \cf2 gpcex1.add2()\cf1 ;\line         \cf2 Grandparentcls.\i sub2\i0 ()\cf1 ;\line         \cf2 Childcls ccex1= \cf1 new \cf2 Childcls()\cf1 ;\line         \cf2 ccex1.add1()\cf1 ;\line         \cf2 Childcls.\i sub1\i0 ()\cf1 ;\line\line\line     \cf2\}\line\}\line\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 Parent static block\par
+Child static block\par
+Grandparent static block\par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+Grandparent instance block\par
+Grandparent class constructor1\par
+parent instance method\par
+ Addiction:23\par
+Grandparent instance method\par
+Addiction:63\par
+Grandparent static method  \par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+Grandparent instance block\par
+Grandparent class constructor1\par
+Subtraction:-1\par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+parent instance method\par
+ Addiction:23\par
+Child instance method\par
+Addition:43\par
+Child static method\par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+Subtraction:-1\par
+\par
+Question 3\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20 package \cf2 com\cf1 ;\line class \cf2 parentclss\{\line     \cf1 int \cf3 a\cf2 =\cf4 10\cf1 ;\line     static  int \cf3\i b\cf2\i0 =\cf4 20\cf1 ;\line     void \cf5 add\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Addition=" \cf2 +c)\cf1 ;\line     \cf2\}\line     \cf1 static void \cf5 sub\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent static method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 parentclss pcex1= \cf1 new \cf2 parentclss()\cf1 ;\line         \cf2 c= pcex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction=" \cf2 +c)\cf1 ;\line     \cf2\}\line     \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 parentclss\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Parent class constructor1"\cf2 )\cf1 ;\line\line     \cf2\}\line\line\}\line\cf1 class \cf2 childclss \cf1 extends \cf2 parentclss\{\line     \cf1 int \cf3 a\cf2 =\cf4 21\cf1 ;\line     static int \cf3\i b\cf2\i0 =\cf4 22\cf1 ;\line     void \cf5 add1\cf2 ()\{\line         \cf1 super\cf2 .add()\cf1 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Child instance method "\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Addition=" \cf2 +c)\cf1 ;\line\line     \cf2\}\line     \cf1 static void \cf5 sub1\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child static method "\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 childclss ccex1= \cf1 new \cf2 childclss()\cf1 ;\line         \cf2 c= ccex1.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction=" \cf2 +c)\cf1 ;\line\line     \cf2\}\line     \{\line\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 childclss\cf2 () \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child class constructor1"\cf2 )\cf1 ;\line     \cf2\}\line\}\line\cf1 class \cf2 childclss2 \cf1 extends \cf2 parentclss\{\line     \cf1 int \cf3 a\cf2 =\cf4 41\cf1 ;\line     static  int \cf3\i b\cf2\i0 =\cf4 42\cf1 ;\line     void \cf5 add2\cf2 ()\{\line         \cf1 this\cf2 .add()\cf1 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Child2 instance method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 c=\cf3 a\cf2 +\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Addition=" \cf2 +c)\cf1 ;\line\line     \cf2\}\line     \cf1 static void \cf5 sub2\cf2 ()\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child2 static method"\cf2 )\cf1 ;\line         int \cf2 c\cf1 ;\line         \cf2 childclss2 ccex2= \cf1 new \cf2 childclss2()\cf1 ;\line         \cf2 c=ccex2.\cf3 a\cf2 -\cf3\i b\cf1\i0 ;\line         \cf2 System.\cf3\i out\cf2\i0 .println(\cf6 "Subtraction=" \cf2 +c)\cf1 ;\line     \cf2\}\line     \{\line\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child2 instance block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf1 static \cf2\{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child2 static block"\cf2 )\cf1 ;\line     \cf2\}\line     \cf5 childclss2\cf2 () \{\line         System.\cf3\i out\cf2\i0 .println(\cf6 "Child2 class constructor1"\cf2 )\cf1 ;\line     \cf2\}\line\line\}\line\line\cf1 public class \cf2 HierarchicalInheritanceEx1 \{\line     \cf1 public static void \cf5 main\cf2 (String[] args) \{\line         childclss ccex1=\cf1 new \cf2 childclss()\cf1 ;\line         \cf2 ccex1.add()\cf1 ;\line         \cf2 childclss.\i sub\i0 ()\cf1 ;\line         \cf2 childclss2 ccex2= \cf1 new \cf2 childclss2()\cf1 ;\line         \cf2 ccex2.add()\cf1 ;\line         \cf2 childclss2.\i sub\i0 ()\cf1 ;\line\line\line     \cf2\}\line\}\line\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 Parent static block\par
+Child static block\par
+Parent instance block\par
+Parent class constructor1\par
+Child instance block\par
+Child class constructor1\par
+Parent instance method\par
+Addition=30\par
+Parent static method\par
+Parent instance block\par
+Parent class constructor1\par
+Subtraction=-10\par
+Child2 static block\par
+Parent instance block\par
+Parent class constructor1\par
+Child2 instance block\par
+Child2 class constructor1\par
+Parent instance method\par
+Addition=30\par
+Parent static method\par
+Parent instance block\par
+Parent class constructor1\par
+Subtraction=-10\par
+}
+ 
