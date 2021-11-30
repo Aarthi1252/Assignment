@@ -110,7 +110,7 @@ class childclss2 extends parentclss {
 
 }
 
-public class HierarchicalInheritaneEx1 {
+public class HierarchicalInheritanceEx1 {
     public static void main(String[] args) {
         childclss ccex1 = new childclss();
         ccex1.add();
